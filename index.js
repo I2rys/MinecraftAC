@@ -38,18 +38,18 @@ async function Initiate_A_Request(username, password){
 }
 
 //Main
-if(Self_Args.length == 0){
+if(!Self_Args.length){
     console.log(`node index.js <input> <output>
-Example: node index.js just_test.txt ./output_test.txt`)
+Example: node index.js accounts.txt output.txt`)
     process.exit()
 }
 
-if(Self_Args[0] == ""){
+if(!Self_Args[0]){
     console.log("Invalid input.")
     process.exit()
 }
 
-if(Self_Args[1] == ""){
+if(!Self_Args[1]){
     console.log("Invalid output.")
     process.exit()
 }
